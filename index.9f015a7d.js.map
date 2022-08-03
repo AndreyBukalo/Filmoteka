@@ -1,0 +1,1 @@
+{"mappings":"ifACA,EADAA,EAAA,SACAC,iB","sources":["src/js/auto-render-main-page.js"],"sourcesContent":["import { renderMainPage } from './api-fetch';\nrenderMainPage();"],"names":["parcelRequire","renderMainPage"],"version":3,"file":"index.9f015a7d.js.map"}
