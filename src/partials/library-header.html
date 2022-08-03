@@ -1,0 +1,77 @@
+<header class="library">
+  <div class="header-library library__container">
+    <nav class="navigation">
+      <a href="/src/index.html" class="header__logo">
+        <svg class="header__logo--svg" width="24" height="24">
+          <use href="./images/header/header-sprite.svg#icon-film"></use>
+        </svg>
+        <span class="header__logo--title">Filmoteka</span>
+      </a>
+      <ul class="header-list">
+        <li class="header-list__item">
+          <a class="header__link" href="/src/index.html">Home</a>
+        </li>
+        <li class="header-list__item" lib-item>
+          <a
+            class="current-page header__link header__link--current"
+            href="/src/library.html"
+            lib-link
+            >My library</a
+          >
+        </li>
+        <button
+          type="button"
+          class="open-modal-auth header-list__item"
+          auth-modal-open
+        >
+          SIGN IN
+        </button>
+      </ul>
+    </nav>
+    <div class="toolbar__lib container">
+      <!-- перемикач теми -->
+      <div class="theme-switch">
+        <svg class="theme-switch__icon" role="img" aria-label="Иконка солнца">
+          <use
+            href="./images/header/header-sprite.svg#icon-sun"
+            width="15"
+            height="15"
+          ></use>
+        </svg>
+
+        <div class="theme-switch__control">
+          <input
+            class="theme-switch__toggle"
+            type="checkbox"
+            name="theme"
+            id="theme-switch-toggle"
+            aria-label="Перемикач між світлою та темною темою"
+          />
+          <label
+            aria-hidden="true"
+            class="theme-switch__track"
+            for="theme-switch-toggle"
+          >
+          </label>
+          <div aria-hidden="true" class="theme-switch__marker"></div>
+        </div>
+
+        <svg class="theme-switch__icon" aria-label="Иконка луны">
+          <use
+            href="./images/header/header-sprite.svg#icon-moon"
+            width="15"
+            height="15"
+          ></use>
+        </svg>
+      </div>
+    </div>
+    <div class="header-library__btn-wrap">
+      <button class="header-library__btn button watched" type="button" watch-button>
+        Watched
+      </button>
+      <button class="header-library__btn button queue" type="button" queue-button>
+        Queue
+      </button>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,37 @@
+.btn-close {
+  @include align-list;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  border: 1px solid #ff6b08;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+
+  &__icon {
+    fill: #ff6b08;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover &__icon {
+    fill: orange;
+  }
+
+  &:focus &__icon {
+    fill: orange;
+  }
+}
+
+.btn-close-header {
+  border: none;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+}

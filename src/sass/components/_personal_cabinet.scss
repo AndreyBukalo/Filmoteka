@@ -1,0 +1,26 @@
+.personal-cabinet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  background-color: #333;
+  cursor: pointer;
+}
+
+.user-parag {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.personal-cabinet:hover {
+  border-color: #ff6b08;
+  box-shadow: 0 8px 23px #ff6b0199;
+}
+
+.personal-cabinet:hover .user-parag {
+  color: #ff6b08;
+}

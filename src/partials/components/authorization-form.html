@@ -1,0 +1,39 @@
+<div class="backdrop is-hidden" auth-modal> //
+    <div class="modal">
+        <button type="button" class="btn-close" auth-modal-close>
+            <svg class="btn-close__icon" width="11" height="11">
+                <use href="./images/symbol-close.svg#icon-close"></use>
+            </svg>
+        </button>
+        <div class="auth-form">
+            <p class="auth-form__welcome">Welcome to Filmoteka</p>
+            <div class="sign-up">
+                <p class="sign-up__title">Sign up / Sign in</p>
+                <input type="email" class="sign-up__input" placeholder="Input your email" id="email">
+                <input type="password" class="sign-up__input" placeholder="Input your password" id="password">
+                <div class="sign-up__buttons">
+                    <button type="submit" class="sign-up__btn" register-btn>Sign up</button>
+                    <button type="submit" class="sign-up__btn" sign-in-btn>Sign in</button>
+                </div>
+            </div>
+            <ul class="auth-list">
+                <li class="auth-list__item google-item" google-auth>
+                    <svg class="auth-list__icon google-icon" widht="50" height="50">
+                        <use href="./images/social-auth.svg#google"></use>
+                    </svg>
+                </li>
+                <li class="auth-list__item twitter-item" twitter-auth>
+                    <svg class="auth-list__icon twitter-icon" widht="50" height="50">
+                        <use href="./images/social-auth.svg#icon-twitter"></use>
+                    </svg>
+                </li>
+                <li class="auth-list__item facebook-item" facebook-auth>
+                    <svg class="auth-list__icon facebook-icon" widht="50" height="50">
+                        <use href="./images/social-auth.svg#icon-facebook"></use>
+                    </svg>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </div>
+</div>

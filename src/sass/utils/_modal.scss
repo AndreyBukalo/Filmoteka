@@ -1,0 +1,30 @@
+.modal {
+  width: 600px;
+  min-height: 581px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: modal-close-open;
+  animation-duration: 4s;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-fill-mode: forwards;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: initial;
+
+  @media screen and (max-width: 767px) {
+    width: 280px;
+  }
+}
+
+.modal-cabinet-user {
+  width: 300px;
+  min-height: 200px;
+  top: 15%;
+  left: 50%;
+  right: 20px;
+}

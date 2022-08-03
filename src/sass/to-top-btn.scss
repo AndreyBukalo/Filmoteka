@@ -1,0 +1,38 @@
+.to-top-btn {
+  display: block;
+  position: fixed;
+
+  right: 10px;
+  bottom: 45px;
+  @media screen and (min-width: 768px) {
+    right: 25px;
+    bottom: 25px;
+  }
+  z-index: 1;
+  padding: 0;
+  outline: none;
+  border: none;
+
+  cursor: pointer;
+
+  color: rgba(255, 107, 8, 0.6);
+
+  transition: color 300ms linear, transform 300ms linear;
+}
+
+.to-top-btn.is-hidden {
+  display: none;
+}
+.to-top-btn__icon {
+  fill: currentColor;
+  @media screen and (min-width: 768px) {
+    width: 70px;
+    height: 70px;
+  }
+}
+.to-top-btn:hover,
+.to-top-btn:focus {
+  color: #ff6b08;
+  outline: none;
+  transform: translateY(-15px);
+}

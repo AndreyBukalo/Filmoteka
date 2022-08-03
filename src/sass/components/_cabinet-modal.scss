@@ -1,0 +1,47 @@
+.cabinet-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  background-color: #333;
+  padding: 24px;
+  box-shadow: 0 8px 23px #ff6b08;
+
+  &__emblem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    border: 2px solid #ff6b08;
+    border-radius: 50%;
+    box-shadow: 0 8px 23px #ff6b08;
+  }
+
+  &__symb {
+    color: #ff6b08;
+    font-size: 68px;
+  }
+
+  &__email {
+    color: #ffffff;
+    margin-top: 20px;
+  }
+
+  &__out {
+    color: #ffffff;
+    background-color: #ff6b08;
+    border: 1px solid #ff6b08;
+    border-radius: 4px;
+    padding: 4px 6px;
+    cursor: pointer;
+    margin-top: 40px;
+
+    &:hover {
+      background-color: #ff6b08;
+      border-color: #ff6b08;
+      box-shadow: 0 8px 23px #ff6b08;
+    }
+  }
+}

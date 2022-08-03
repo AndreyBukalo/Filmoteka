@@ -1,0 +1,95 @@
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <div class="header__top">
+        <a href="/src/index.html" class="header__logo">
+          <svg class="header__logo-icon" width="24" height="24">
+            <use href="./images/header/header-sprite.svg#icon-film"></use>
+          </svg>
+          <p class="header__logo-text">Filmoteka</p>
+        </a>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a
+                href="/src/index.html"
+                class="header__link header__link--current"
+                >Home</a
+              >
+            </li>
+            <li class="header__item" lib-item>
+              <a href="/src/library.html" class="header__link" lib-link>My library</a>
+            </li>
+            <button
+              type="button"
+              class="open-modal-auth header__item"
+              auth-modal-open
+            >
+              SIGN IN
+            </button>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__center">
+        <form id="search-form" class="header__form">
+          <input
+            type="text"
+            name="searchQuery"
+            autocomplete="off"
+            placeholder="Movie search"
+          />
+          <button class="header__form-btn" type="submit">
+            <svg class="header__form-icon" width="14" height="14">
+              <use href="./images/header/header-sprite.svg#icon-search"></use>
+            </svg>
+          </button>
+        </form>
+        <div class="toolbar container">
+          <!-- перемикач теми -->
+          <div class="theme-switch">
+            <svg
+              class="theme-switch__icon"
+              role="img"
+              aria-label="Иконка солнца"
+            >
+              <use
+                href="./images/header/header-sprite.svg#icon-sun"
+                width="15"
+                height="15"
+              ></use>
+            </svg>
+
+            <div class="theme-switch__control">
+              <input
+                class="theme-switch__toggle"
+                type="checkbox"
+                name="theme"
+                id="theme-switch-toggle"
+                aria-label="Перемикач між світлою та темною темою"
+              />
+              <label
+                aria-hidden="true"
+                class="theme-switch__track"
+                for="theme-switch-toggle"
+              >
+              </label>
+              <div aria-hidden="true" class="theme-switch__marker"></div>
+            </div>
+
+            <svg class="theme-switch__icon" aria-label="Иконка луны">
+              <use
+                href="./images/header/header-sprite.svg#icon-moon"
+                width="15"
+                height="15"
+              ></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <p class="header__search-error is-hidden">
+        Search result not successful. Enter the correct movie name and try
+        again.
+      </p>
+    </div>
+  </div>
+</header>

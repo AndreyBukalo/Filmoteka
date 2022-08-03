@@ -1,0 +1,177 @@
+.backdrop {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.22);
+}
+
+.auth {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-form {
+  width: 600px;
+  margin: auto;
+  background-color: lightgrey;
+  background-image: url(../images/multiplex-16-9-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+  padding: 40px;
+  box-shadow: 0 0 16px #ff6b08;
+
+  &__welcome {
+    font-size: 48px;
+    color: #ff6b08;
+    font-weight: 600;
+    text-align: center;
+    @media screen and (max-width: 767px) {
+      font-size: 35px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    width: 280px;
+    padding: 30px 10px 20px 10px;
+  }
+}
+
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 50px auto 0;
+  @media screen and (max-width: 767px) {
+    width: 260px;
+  }
+  &__title {
+    font-size: 30px;
+    color: #ff6b08;
+    text-align: center;
+    margin: 0 0 30px 0;
+
+    @media screen and (max-width: 767px) {
+      font-size: 25px;
+    }
+  }
+
+  &__input {
+    font-size: 18px;
+    border: 1px solid #ff6b08;
+    border-radius: 4px;
+    padding: 10px 6px;
+    outline: none;
+
+    &:hover {
+      border: 1px solid #ff6b08;
+      box-shadow: 0 0 14px #ff6b08;
+    }
+
+    &:focus {
+      border: 1px solid #ff6b08;
+      box-shadow: 0 0 14px #ff6b08;
+    }
+  }
+
+  &__input + &__input {
+    margin-top: 30px;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__btn {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    width: 150px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff6b08;
+    padding: 12px 6px;
+    margin: 40px auto 0 auto;
+    cursor: pointer;
+
+    @media screen and (max-width: 767px) {
+      width: 115px;
+    }
+
+    &:hover {
+      box-shadow: 0 0 14px #ff6b08;
+    }
+
+    &:focus {
+      box-shadow: 0 0 14px #ff6b08;
+    }
+  }
+}
+
+.auth-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+  padding: 30px 0;
+  margin: 70px auto 0 auto;
+  width: 100%;
+
+  @media screen and (max-width: 767px) {
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+
+  &__item {
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 0 14px #ff6b08;
+    }
+
+    &:focus {
+      box-shadow: 0 0 14px #ff6b08;
+    }
+  }
+
+  &__item + &__item {
+    margin-left: 50px;
+    @media screen and (max-width: 767px) {
+      margin-left: 0px;
+    }
+  }
+
+  &__icon {
+    width: 50px;
+  }
+}
+
+.google-item {
+  background: #ffffff;
+}
+
+.google-icon {
+  fill: #3b9e1d;
+}
+
+.twitter-item {
+  background: #ffffff;
+}
+
+.twitter-icon {
+  fill: #00a2ff;
+}
+
+.facebook-item {
+  background: #008cff;
+}
+
+.facebook-icon {
+  fill: #ffffff;
+}
